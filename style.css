@@ -1,0 +1,101 @@
+ @font-face { font-family: VG5000; src: url('fonts/VG5000-Regular_web.woff2'); } 
+ @font-face { font-family: Jetbrains SemiLight; src: url('fonts/JetBrainsMono-SemiLight.woff2'); } 
+
+ :root {
+ 	--lred: #e9746d;
+	--fg: #f0f0be;
+ }
+
+ body {
+ 	background-color: #0b1820;
+	color: #f0f0be;
+	margin: 0px;
+ }
+ h1 {
+ 	font-family: 'VG5000';
+	color: var(--lred);
+ }
+
+ p {
+ 	font-family: 'Jetbrains SemiLight';
+	color: var(--fg);
+	font-size: 18px;
+ }
+
+ header {
+ 	/*background-color: #5d686f;*/
+	padding: 5px;
+	border-bottom: solid 2px var(--lred);
+ }
+
+ header::after {
+  content:  '';
+  display: table;
+  clear: both;
+ }
+
+ .name {
+ 	float: left;
+	padding: 5px;
+	border: 2px solid;
+  	margin: 5px;
+ }
+
+ h1 mark{
+ 	background-color: var(--lred);
+	animation: blink 2s linear infinite;
+ }
+
+ @keyframes blink{
+ 	0%{
+		opacity: 0;
+	}
+	50%{	
+		opacity: 0;
+	}
+	50.01%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 1;
+	}
+ }
+
+ .flavor{
+	text-align: center;
+ 	align: center;
+	font-size: 60px;
+ }
+
+ .wall{
+	 width: 750px;
+	 align: center;
+	 margin: auto;
+ }
+
+ nav {
+ float: right;
+ }
+
+ nav ul {
+ 	margin: 0;
+	padding: 0;
+	list-style: none;
+ }
+
+ nav li{
+ 	display: inline-block;
+	margin-left: 40px;
+	padding-top: 20px;
+ }
+
+ nav a {
+ 	color: var(--lred);
+	font-family: 'Jetbrains SemiLight';
+	text-decoration: none;
+	font-size: 18px;
+ }
+
+ nav a:hover {
+	text-decoration: underline;
+ }
