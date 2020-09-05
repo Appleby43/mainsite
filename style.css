@@ -73,6 +73,12 @@
 	 margin: auto;
  }
 
+ .contact {
+	 color: var(--lred);
+	 font-size: 15px;
+	 text-align: center;
+ }
+
  hr {
 	 color: var(--lred);
 	 border-top: 2px solid;
